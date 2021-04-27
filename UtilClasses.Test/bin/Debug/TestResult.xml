@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.Test.dll" total="8" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2021-04-27" time="10:43:00">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.9151" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\admin\Desktop\Estudo Isoplan\TDD\nunit" machine-name="VS2017" user="admin" user-domain="VS2017" />
+  <culture-info current-culture="pt-BR" current-uiculture="pt-BR" />
+  <test-suite type="Assembly" name="C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.Test.dll" executed="True" result="Success" success="True" time="0.066" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="UtilClasses" executed="True" result="Success" success="True" time="0.063" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.059" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="tstTable" executed="True" result="Success" success="True" time="0.056" asserts="0">
+                <results>
+                  <test-case name="UtilClasses.Test.tstTable.T001_SingleInstance" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T002_AddRow" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="UtilClasses.Test.tstTable.T003_VerifyUsernameExistsFalse" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T003_VerifyUsernameExistsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T004_VerifyLoginFalse" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T004_VerifyLoginTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T005_Save" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="UtilClasses.Test.tstTable.T006_DeleteForRepeatUnitTests" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
