@@ -10,3 +10,9 @@ C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSer
 C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses\obj\Debug\UtilClasses.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses\obj\Debug\UtilClasses.dll
 C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses\obj\Debug\UtilClasses.pdb
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\bin\Debug\UtilClasses.dll
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\bin\Debug\UtilClasses.pdb
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.csprojAssemblyReference.cache
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.csproj.CoreCompileInputs.cache
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.dll
+C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.pdb

@@ -13,9 +13,9 @@ namespace UserInterface
 {
     public partial class frmTesteFinalUser : Form
     {
-       private DataBase db;
-       private User currentUser;
-
+        private DataBase db;
+        private User currentUser;
+        private bool On = false;
 
         public frmTesteFinalUser()
         {
@@ -35,20 +35,37 @@ namespace UserInterface
 
         private void btnTeste_Click(object sender, EventArgs e)
         {
-            Random rdm = new Random();
-            int num = rdm.Next(1,10);
-
-            if (num % 2 == 0)
+            if (On)
             {
-                currentUser.Coins += 100;
-                tslCoins.Text = "Coins: " + currentUser.Coins;
+                On = false;
+                btnTeste.BackgroundImage = imageList.Images[0];
             }
             else
             {
-                currentUser.Coins -= 100;
-                tslCoins.Text = "Coins: " + currentUser.Coins;
+                On = true;
+                btnTeste.BackgroundImage = imageList.Images[1];
             }
 
+
+            Random rdm = new Random();
+            int num = rdm.Next(1,10);
+            try
+            {
+                if (num % 2 == 0)
+                {
+                    currentUser.Coins += 100;
+                    tslCoins.Text = "Coins: " + currentUser.Coins;
+                }
+                else
+                {
+                    currentUser.Coins -= 100;
+                    tslCoins.Text = "Coins: " + currentUser.Coins;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
     }
 }

@@ -29,14 +29,21 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTesteFinalUser));
             this.tsDetails = new System.Windows.Forms.ToolStrip();
             this.tslUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslCoins = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTeste = new System.Windows.Forms.Button();
+            this.Configurações = new System.Windows.Forms.ToolStripDropDownButton();
+            this.diagramaEmÁrvoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diagramaEmÁrvoreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.tsDetails.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,12 +78,19 @@ namespace UserInterface
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.LightGray;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Configurações,
+            this.toolStripSeparator1,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(343, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton1
             // 
@@ -97,13 +111,52 @@ namespace UserInterface
             // 
             // btnTeste
             // 
-            this.btnTeste.Location = new System.Drawing.Point(243, 88);
+            this.btnTeste.BackgroundImage = global::UserInterface.Properties.Resources.interruptor_de_alavanca__2_;
+            this.btnTeste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTeste.Location = new System.Drawing.Point(243, 81);
             this.btnTeste.Name = "btnTeste";
-            this.btnTeste.Size = new System.Drawing.Size(73, 117);
+            this.btnTeste.Size = new System.Drawing.Size(70, 140);
             this.btnTeste.TabIndex = 3;
-            this.btnTeste.Text = "Rodar";
             this.btnTeste.UseVisualStyleBackColor = true;
             this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
+            // 
+            // Configurações
+            // 
+            this.Configurações.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.diagramaEmÁrvoreToolStripMenuItem});
+            this.Configurações.Image = ((System.Drawing.Image)(resources.GetObject("Configurações.Image")));
+            this.Configurações.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Configurações.Name = "Configurações";
+            this.Configurações.Size = new System.Drawing.Size(76, 22);
+            this.Configurações.Text = "Opções";
+            // 
+            // diagramaEmÁrvoreToolStripMenuItem
+            // 
+            this.diagramaEmÁrvoreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.diagramaEmÁrvoreToolStripMenuItem1,
+            this.tabelaToolStripMenuItem});
+            this.diagramaEmÁrvoreToolStripMenuItem.Name = "diagramaEmÁrvoreToolStripMenuItem";
+            this.diagramaEmÁrvoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diagramaEmÁrvoreToolStripMenuItem.Text = "Cálculo Esperança";
+            // 
+            // diagramaEmÁrvoreToolStripMenuItem1
+            // 
+            this.diagramaEmÁrvoreToolStripMenuItem1.Name = "diagramaEmÁrvoreToolStripMenuItem1";
+            this.diagramaEmÁrvoreToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
+            this.diagramaEmÁrvoreToolStripMenuItem1.Text = "Diagrama em Árvore";
+            // 
+            // tabelaToolStripMenuItem
+            // 
+            this.tabelaToolStripMenuItem.Name = "tabelaToolStripMenuItem";
+            this.tabelaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.tabelaToolStripMenuItem.Text = "Tabela";
+            // 
+            // imageList
+            // 
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "off");
+            this.imageList.Images.SetKeyName(1, "on");
             // 
             // frmTesteFinalUser
             // 
@@ -134,5 +187,11 @@ namespace UserInterface
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTeste;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripDropDownButton Configurações;
+        private System.Windows.Forms.ToolStripMenuItem diagramaEmÁrvoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diagramaEmÁrvoreToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tabelaToolStripMenuItem;
+        private System.Windows.Forms.ImageList imageList;
     }
 }
