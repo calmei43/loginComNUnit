@@ -6,8 +6,6 @@ namespace UserInterface
 {
     public partial class frmRegister : Form
     {
-        public bool testMode = false;
-
         public frmRegister()
         {
             InitializeComponent();
@@ -15,23 +13,24 @@ namespace UserInterface
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            Table table = Table.GetInstance("Usuarios.xml");
+            DataBase db = DataBase.GetInstance("Usuarios.xml");
             
             try
             {
                 if (txtSenha1.Text == txtSenha2.Text)
                 {
-                    User user = User.GetInstance();
+                    User user = new User();
 
                     user.Username = txtUsername.Text;
                     user.Password = txtSenha1.Text;
+                    user.Coins = 1000;
 
-                    table.EditRow(user);
+                    db.AddUser(user);
 
-                    table.Save("Usuarios.xml");
+                    db.Save("Usuarios.xml");
 
-                    if(!testMode)
-                        MessageBox.Show("Cadastro realizado com sucesso!!!");
+                    MessageBox.Show("Cadastro realizado com sucesso!!!");
+                    this.Close();
                 }
                 else
                 {
@@ -40,8 +39,7 @@ namespace UserInterface
             }
             catch (Exception erro)
             {
-                if (!testMode)
-                    MessageBox.Show(erro.Message);
+                MessageBox.Show(erro.Message);
             }
         }
 

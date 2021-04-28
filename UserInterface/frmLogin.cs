@@ -13,8 +13,6 @@ namespace UserInterface
 {
     public partial class frmLogin : Form
     {
-        public bool testMode = false;
-
         public frmLogin()
         {
             InitializeComponent();
@@ -24,16 +22,14 @@ namespace UserInterface
         {
             try
             {
-                User user = User.GetInstance();
-                user.Username = txtUsername.Text;
-                user.Password = txtPassword.Text;
+                DataBase db = DataBase.GetInstance("Usuarios.xml");
 
-                Table table = Table.GetInstance("Usuarios.xml");
-
-                if (table.VerifyLogin(user.Username, user.Password))
+                if (db.VerifyLogin(txtUsername.Text, txtPassword.Text))
                 {
-                    if(!testMode)
-                        MessageBox.Show("Login efetuado com sucesso!!!");
+                    MessageBox.Show("Login efetuado com sucesso!!!");
+                    frmTesteFinalUser frm = new frmTesteFinalUser();
+                    frm.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -43,16 +39,20 @@ namespace UserInterface
             }
             catch (Exception erro)
             {
-                if (!testMode)
-                    MessageBox.Show(erro.Message);
+                MessageBox.Show(erro.Message);
             }
-            
         }
 
         private void tsbRegister_Click(object sender, EventArgs e)
         {
             frmRegister frmRegister = new frmRegister();
             frmRegister.ShowDialog();
+        }
+
+        private void tsbForgot_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword();
+            frm.ShowDialog();
         }
     }
 }

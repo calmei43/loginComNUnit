@@ -32,7 +32,7 @@ namespace UserInterface
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangePassword));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbExit = new System.Windows.Forms.ToolStripButton();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnAlter = new System.Windows.Forms.Button();
             this.txtSenha2 = new System.Windows.Forms.TextBox();
             this.txtSenha1 = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -61,17 +61,18 @@ namespace UserInterface
             this.tsbExit.Name = "tsbExit";
             this.tsbExit.Size = new System.Drawing.Size(61, 24);
             this.tsbExit.Text = "Voltar";
+            this.tsbExit.Click += new System.EventHandler(this.tsbExit_Click);
             // 
-            // btnRegister
+            // btnAlter
             // 
-            this.btnRegister.Location = new System.Drawing.Point(169, 166);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(63, 19);
-            this.btnRegister.TabIndex = 14;
-            this.btnRegister.Text = "Cadastrar";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnAlter.Location = new System.Drawing.Point(169, 166);
+            this.btnAlter.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAlter.Name = "btnAlter";
+            this.btnAlter.Size = new System.Drawing.Size(63, 19);
+            this.btnAlter.TabIndex = 14;
+            this.btnAlter.Text = "Alterar";
+            this.btnAlter.UseVisualStyleBackColor = true;
+            this.btnAlter.Click += new System.EventHandler(this.btnAlter_Click);
             // 
             // txtSenha2
             // 
@@ -132,7 +133,7 @@ namespace UserInterface
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 191);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnAlter);
             this.Controls.Add(this.txtSenha2);
             this.Controls.Add(this.txtSenha1);
             this.Controls.Add(this.txtUsername);
@@ -153,7 +154,7 @@ namespace UserInterface
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbExit;
-        public System.Windows.Forms.Button btnRegister;
+        public System.Windows.Forms.Button btnAlter;
         public System.Windows.Forms.TextBox txtSenha2;
         public System.Windows.Forms.TextBox txtSenha1;
         public System.Windows.Forms.TextBox txtUsername;

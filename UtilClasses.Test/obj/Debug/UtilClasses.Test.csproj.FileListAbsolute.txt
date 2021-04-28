@@ -1,9 +1,0 @@
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.Test.dll
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.Test.pdb
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.dll
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\bin\Debug\UtilClasses.pdb
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\obj\Debug\UtilClasses.Test.csprojAssemblyReference.cache
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\obj\Debug\UtilClasses.Test.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\obj\Debug\UtilClasses.Test.csproj.CopyComplete
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\obj\Debug\UtilClasses.Test.dll
-C:\Users\admin\Desktop\Estudo Isoplan\Serialização\LoginWithDataTableAndXMLSerializer-master\UtilClasses.Test\obj\Debug\UtilClasses.Test.pdb

@@ -6,50 +6,21 @@ namespace UtilClasses
     {
         #region "Singleton - Pattern"
 
-        //Armazena apenas a primeira instância
-        private static User instance;
+        private static User _instance;
 
-        /// <summary>
-        /// Método para garantir apenas uma instância.
-        /// </summary>
-        /// <param name="id">Id do usuário</param>
-        /// <param name="user">username</param>
-        /// <param name="password">senha - OBS.: Criptografar</param>
-        /// <param name="coins">Quantidade inicial de moedas</param>
-        /// <returns>Instância da Classe User</returns>
-        public static User GetInstance(string username, string password)
+        public static User GetCurrent()
         {
-            //Verifica se a variável "instance" já contém alguma instância
-            if (instance == null) //Não existe
-            {                
-                //Retorna uma nova instância
-                instance = new User();
-                instance.Coins = 1000;
-            }
-
-            instance.Username = username;
-            instance.Password = password;
-            
-
-            //Retorna a instância já existente
-            return instance;
-        }
-
-        public static User GetInstance()
-        {
-            //Verifica se a variável "instance" já contém alguma instância
-            if (instance == null) //Não existe
+            if(_instance == null)
             {
-                //Retorna uma nova instância
-                instance = new User();
+                _instance = new User();
             }
 
-            //Retorna a instância já existente
-            return instance;
+            return _instance;
         }
 
         #endregion
 
+        private int id;
         private string username;
         private string password;
         private int coins;
@@ -73,8 +44,8 @@ namespace UtilClasses
             {
                 if (value == null || value == string.Empty)
                     throw new Exception("A senha não pode ser nula.");
-                if (value.Length < 8)
-                    throw new Exception("A senha deve ter no mínimo 10 caracteres.");
+                if (value.Length < 4)
+                    throw new Exception("A senha deve ter no mínimo 4 caracteres.");
                 else
                     password = value;
             }
@@ -83,7 +54,33 @@ namespace UtilClasses
         public int Coins
         {
             get => coins;
-            set => coins = value;
+            set 
+            {
+                if(value < 0)
+                {
+                    throw new Exception("Você não possui mais Dinheiro");
+                }
+                else
+                {
+                    coins = value;
+                }
+            }
+        }
+
+        public int ID
+        {
+            get => id;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Você não possui mais Dinheiro");
+                }
+                else
+                {
+                    id = value;
+                }
+            }
         }
     }
 }

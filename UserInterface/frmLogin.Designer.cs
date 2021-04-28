@@ -71,11 +71,12 @@
             this.tsbForgot.Name = "tsbForgot";
             this.tsbForgot.Size = new System.Drawing.Size(115, 24);
             this.tsbForgot.Text = "Esqueci a Senha";
+            this.tsbForgot.Click += new System.EventHandler(this.tsbForgot_Click);
             // 
             // picLogin
             // 
             this.picLogin.Location = new System.Drawing.Point(11, 48);
-            this.picLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogin.Margin = new System.Windows.Forms.Padding(2);
             this.picLogin.Name = "picLogin";
             this.picLogin.Size = new System.Drawing.Size(75, 80);
             this.picLogin.TabIndex = 1;
@@ -104,7 +105,7 @@
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(98, 48);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(174, 20);
             this.txtUsername.TabIndex = 4;
@@ -112,7 +113,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(98, 92);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(174, 20);
             this.txtPassword.TabIndex = 5;
@@ -120,7 +121,7 @@
             // btnSingIn
             // 
             this.btnSingIn.Location = new System.Drawing.Point(215, 122);
-            this.btnSingIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSingIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnSingIn.Name = "btnSingIn";
             this.btnSingIn.Size = new System.Drawing.Size(56, 19);
             this.btnSingIn.TabIndex = 6;
@@ -140,7 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picLogin);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";

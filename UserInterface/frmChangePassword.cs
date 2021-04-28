@@ -13,32 +13,28 @@ namespace UserInterface
 {
     public partial class frmChangePassword : Form
     {
-        public bool testMode = false;
-
         public frmChangePassword()
         {
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnAlter_Click(object sender, EventArgs e)
         {
-            Table table = Table.GetInstance("Usuarios.xml");
+            DataBase db = DataBase.GetInstance("Usuarios.xml");
 
             try
             {
                 if (txtSenha1.Text == txtSenha2.Text)
                 {
-                    User user = User.GetInstance();
-
-                    user.Username = txtUsername.Text;
-                    user.Password = txtSenha1.Text;
-
-                    table.EditRow(user);
-
-                    table.Save("Usuarios.xml");
-
-                    if (!testMode)
-                        MessageBox.Show("Mudança feita com sucesso!!!");
+                    if (db.EditPassword(txtUsername.Text, txtSenha1.Text))
+                    {
+                        MessageBox.Show("Senha Alterada com sucesso!!!");
+                        this.Close();
+                    }
+                    else
+                    {
+                        throw new Exception("Usuário inexistente!!");
+                    }
                 }
                 else
                 {
@@ -47,9 +43,13 @@ namespace UserInterface
             }
             catch (Exception erro)
             {
-                if (!testMode)
-                    MessageBox.Show(erro.Message);
+                MessageBox.Show(erro.Message);
             }
+        }
+
+        private void tsbExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
