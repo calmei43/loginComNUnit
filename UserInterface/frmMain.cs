@@ -234,5 +234,16 @@ namespace UserInterface
 
         #endregion
 
+        private void diagramaEmÁrvoreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmDiagrama tela = new FrmDiagrama();
+            tela.ShowDialog();
+        }
+
+        private void tabelaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTabela tela = new FrmTabela();
+            tela.ShowDialog();
+        }
     }
 }

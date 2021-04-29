@@ -63,6 +63,12 @@
     <Compile Include="frmChangePassword.Designer.cs">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDiagrama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiagrama.Designer.cs">
+      <DependentUpon>FrmDiagrama.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,10 +87,19 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTabela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabela.Designer.cs">
+      <DependentUpon>FrmTabela.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmChangePassword.resx">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiagrama.resx">
+      <DependentUpon>FrmDiagrama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -94,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabela.resx">
+      <DependentUpon>FrmTabela.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\interruptor-de-alavanca %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diagrama.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tabela.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

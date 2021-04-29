@@ -136,7 +136,7 @@ namespace UserInterface
             this.diagramaEmÁrvoreToolStripMenuItem1,
             this.tabelaToolStripMenuItem});
             this.diagramaEmÁrvoreToolStripMenuItem.Name = "diagramaEmÁrvoreToolStripMenuItem";
-            this.diagramaEmÁrvoreToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.diagramaEmÁrvoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.diagramaEmÁrvoreToolStripMenuItem.Text = "Cálculo Esperança";
             // 
             // diagramaEmÁrvoreToolStripMenuItem1
@@ -144,12 +144,14 @@ namespace UserInterface
             this.diagramaEmÁrvoreToolStripMenuItem1.Name = "diagramaEmÁrvoreToolStripMenuItem1";
             this.diagramaEmÁrvoreToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
             this.diagramaEmÁrvoreToolStripMenuItem1.Text = "Diagrama em Árvore";
+            this.diagramaEmÁrvoreToolStripMenuItem1.Click += new System.EventHandler(this.diagramaEmÁrvoreToolStripMenuItem1_Click);
             // 
             // tabelaToolStripMenuItem
             // 
             this.tabelaToolStripMenuItem.Name = "tabelaToolStripMenuItem";
             this.tabelaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.tabelaToolStripMenuItem.Text = "Tabela";
+            this.tabelaToolStripMenuItem.Click += new System.EventHandler(this.tabelaToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 

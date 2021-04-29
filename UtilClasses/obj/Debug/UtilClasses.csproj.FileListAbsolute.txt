@@ -16,3 +16,9 @@ C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses
 C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.csproj.CoreCompileInputs.cache
 C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.dll
 C:\Users\andre_000\Desktop\Login\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.pdb
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\bin\Debug\UtilClasses.dll
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\bin\Debug\UtilClasses.pdb
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.csprojAssemblyReference.cache
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.csproj.CoreCompileInputs.cache
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.dll
+C:\Users\Toxic Guy\Desktop\Roleta\loginComNUnit\UtilClasses\obj\Debug\UtilClasses.pdb

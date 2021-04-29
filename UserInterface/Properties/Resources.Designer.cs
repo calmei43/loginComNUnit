@@ -63,9 +63,29 @@ namespace UserInterface.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diagrama {
+            get {
+                object obj = ResourceManager.GetObject("Diagrama", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap interruptor_de_alavanca__2_ {
             get {
                 object obj = ResourceManager.GetObject("interruptor-de-alavanca (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tabela {
+            get {
+                object obj = ResourceManager.GetObject("Tabela", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
