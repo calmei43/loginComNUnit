@@ -16,9 +16,9 @@ namespace UserInterface
         {
             InitializeComponent();
             string[] row0 = { "4,00", "1/1000", "4/1000" };
-            string[] row1 = { "2,00", "9/1000", "18/1000" };
+            string[] row1 = { "2,00", "27/1000", "108/1000" };
             string[] row2 = { "0", "216/1000", "0" };
-            string[] row3 = { "-1,00", "774/1000", "-774/1000" };
+            string[] row3 = { "-1,00", "756/1000", "-774/1000" };
 
             dgTabela.Rows.Clear();
             dgTabela.Rows.Add(row0);
