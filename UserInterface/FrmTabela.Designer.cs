@@ -31,10 +31,14 @@ namespace UserInterface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTabela));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.dgTabela = new System.Windows.Forms.DataGridView();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Probabilidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Esperanca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgTabela)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -47,16 +51,6 @@ namespace UserInterface
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UserInterface.Properties.Resources.Tabela;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 410);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // toolStripButton1
             // 
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
@@ -66,18 +60,60 @@ namespace UserInterface
             this.toolStripButton1.Text = "SAIR";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // dgTabela
+            // 
+            this.dgTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgTabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Valor,
+            this.Probabilidade,
+            this.Esperanca});
+            this.dgTabela.Location = new System.Drawing.Point(97, 103);
+            this.dgTabela.Name = "dgTabela";
+            this.dgTabela.Size = new System.Drawing.Size(423, 150);
+            this.dgTabela.TabIndex = 2;
+            // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "X";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            // 
+            // Probabilidade
+            // 
+            this.Probabilidade.Frozen = true;
+            this.Probabilidade.HeaderText = "P(x)";
+            this.Probabilidade.Name = "Probabilidade";
+            this.Probabilidade.ReadOnly = true;
+            // 
+            // Esperanca
+            // 
+            this.Esperanca.Frozen = true;
+            this.Esperanca.HeaderText = "X.P(x)";
+            this.Esperanca.Name = "Esperanca";
+            this.Esperanca.ReadOnly = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(338, 233);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "E(x) = R$ - 0,752";
+            // 
             // FrmTabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgTabela);
             this.Controls.Add(this.toolStrip1);
             this.Name = "FrmTabela";
             this.Text = "FrmTabela";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgTabela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,6 +123,10 @@ namespace UserInterface
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgTabela;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Probabilidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Esperanca;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
