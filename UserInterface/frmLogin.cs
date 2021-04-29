@@ -27,7 +27,7 @@ namespace UserInterface
                 if (db.VerifyLogin(txtUsername.Text, txtPassword.Text))
                 {
                     MessageBox.Show("Login efetuado com sucesso!!!");
-                    frmTesteFinalUser frm = new frmTesteFinalUser();
+                    frmMain frm = new frmMain();
                     frm.Show();
                     this.Hide();
                 }

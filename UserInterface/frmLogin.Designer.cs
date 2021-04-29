@@ -109,6 +109,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(174, 20);
             this.txtUsername.TabIndex = 4;
+            this.txtUsername.Text = "teste2";
             // 
             // txtPassword
             // 
@@ -117,6 +118,8 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(174, 20);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.Text = "1234";
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnSingIn
             // 
