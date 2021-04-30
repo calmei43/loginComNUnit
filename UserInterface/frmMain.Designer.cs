@@ -31,9 +31,6 @@ namespace UserInterface
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.tsDetails = new System.Windows.Forms.ToolStrip();
-            this.tslUsername = new System.Windows.Forms.ToolStripLabel();
-            this.tslCoins = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.Configurações = new System.Windows.Forms.ToolStripDropDownButton();
             this.diagramaEmÁrvoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +58,12 @@ namespace UserInterface
             this.picB2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tsDetails.SuspendLayout();
+            this.tslUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslCoins = new System.Windows.Forms.ToolStripLabel();
+            this.tsDetails = new System.Windows.Forms.ToolStrip();
+            this.picC6 = new System.Windows.Forms.PictureBox();
+            this.picA6 = new System.Windows.Forms.PictureBox();
+            this.picB6 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             this.Roleta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picA3)).BeginInit();
@@ -79,44 +81,23 @@ namespace UserInterface
             ((System.ComponentModel.ISupportInitialize)(this.picC1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picA2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picB2)).BeginInit();
+            this.tsDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picC6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picA6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picB6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tsDetails
-            // 
-            this.tsDetails.BackColor = System.Drawing.Color.LightGray;
-            this.tsDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tsDetails.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tslUsername,
-            this.tslCoins});
-            this.tsDetails.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.tsDetails.Location = new System.Drawing.Point(0, 358);
-            this.tsDetails.Name = "tsDetails";
-            this.tsDetails.Size = new System.Drawing.Size(467, 18);
-            this.tsDetails.TabIndex = 0;
-            this.tsDetails.Text = "toolStrip1";
-            // 
-            // tslUsername
-            // 
-            this.tslUsername.Name = "tslUsername";
-            this.tslUsername.Size = new System.Drawing.Size(102, 15);
-            this.tslUsername.Text = "Usuário: #######";
-            // 
-            // tslCoins
-            // 
-            this.tslCoins.Name = "tslCoins";
-            this.tslCoins.Size = new System.Drawing.Size(71, 15);
-            this.tslCoins.Text = "Coins: ####";
             // 
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.LightGray;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Configurações,
             this.toolStripSeparator1,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(467, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(558, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -127,7 +108,7 @@ namespace UserInterface
             this.Configurações.Image = ((System.Drawing.Image)(resources.GetObject("Configurações.Image")));
             this.Configurações.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Configurações.Name = "Configurações";
-            this.Configurações.Size = new System.Drawing.Size(76, 22);
+            this.Configurações.Size = new System.Drawing.Size(93, 24);
             this.Configurações.Text = "Opções";
             // 
             // diagramaEmÁrvoreToolStripMenuItem
@@ -136,32 +117,32 @@ namespace UserInterface
             this.diagramaEmÁrvoreToolStripMenuItem1,
             this.tabelaToolStripMenuItem});
             this.diagramaEmÁrvoreToolStripMenuItem.Name = "diagramaEmÁrvoreToolStripMenuItem";
-            this.diagramaEmÁrvoreToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.diagramaEmÁrvoreToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.diagramaEmÁrvoreToolStripMenuItem.Text = "Cálculo Esperança";
             // 
             // diagramaEmÁrvoreToolStripMenuItem1
             // 
             this.diagramaEmÁrvoreToolStripMenuItem1.Name = "diagramaEmÁrvoreToolStripMenuItem1";
-            this.diagramaEmÁrvoreToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
+            this.diagramaEmÁrvoreToolStripMenuItem1.Size = new System.Drawing.Size(231, 26);
             this.diagramaEmÁrvoreToolStripMenuItem1.Text = "Diagrama em Árvore";
             // 
             // tabelaToolStripMenuItem
             // 
             this.tabelaToolStripMenuItem.Name = "tabelaToolStripMenuItem";
-            this.tabelaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.tabelaToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.tabelaToolStripMenuItem.Text = "Tabela";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(46, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 24);
             this.toolStripButton1.Text = "Exit";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -169,9 +150,10 @@ namespace UserInterface
             // 
             this.btnAlavanca.BackgroundImage = global::UserInterface.Properties.Resources.interruptor_de_alavanca__2_;
             this.btnAlavanca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlavanca.Location = new System.Drawing.Point(357, 128);
+            this.btnAlavanca.Location = new System.Drawing.Point(444, 151);
+            this.btnAlavanca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAlavanca.Name = "btnAlavanca";
-            this.btnAlavanca.Size = new System.Drawing.Size(70, 140);
+            this.btnAlavanca.Size = new System.Drawing.Size(93, 172);
             this.btnAlavanca.TabIndex = 3;
             this.btnAlavanca.UseVisualStyleBackColor = true;
             this.btnAlavanca.Click += new System.EventHandler(this.btnAlavanca_Click);
@@ -186,6 +168,9 @@ namespace UserInterface
             // Roleta
             // 
             this.Roleta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Roleta.Controls.Add(this.picC6);
+            this.Roleta.Controls.Add(this.picA6);
+            this.Roleta.Controls.Add(this.picB6);
             this.Roleta.Controls.Add(this.picA3);
             this.Roleta.Controls.Add(this.picC5);
             this.Roleta.Controls.Add(this.picB3);
@@ -201,19 +186,20 @@ namespace UserInterface
             this.Roleta.Controls.Add(this.picC1);
             this.Roleta.Controls.Add(this.picA2);
             this.Roleta.Controls.Add(this.picB2);
-            this.Roleta.Location = new System.Drawing.Point(12, 38);
+            this.Roleta.Location = new System.Drawing.Point(16, 47);
+            this.Roleta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Roleta.Name = "Roleta";
-            this.Roleta.Size = new System.Drawing.Size(300, 304);
+            this.Roleta.Size = new System.Drawing.Size(399, 373);
             this.Roleta.TabIndex = 26;
             // 
             // picA3
             // 
             this.picA3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picA3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picA3.Location = new System.Drawing.Point(0, 200);
+            this.picA3.Location = new System.Drawing.Point(0, 246);
             this.picA3.Margin = new System.Windows.Forms.Padding(0);
             this.picA3.Name = "picA3";
-            this.picA3.Size = new System.Drawing.Size(100, 100);
+            this.picA3.Size = new System.Drawing.Size(132, 122);
             this.picA3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picA3.TabIndex = 16;
             this.picA3.TabStop = false;
@@ -223,10 +209,10 @@ namespace UserInterface
             // 
             this.picC5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picC5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picC5.Location = new System.Drawing.Point(199, 400);
+            this.picC5.Location = new System.Drawing.Point(265, 492);
             this.picC5.Margin = new System.Windows.Forms.Padding(0);
             this.picC5.Name = "picC5";
-            this.picC5.Size = new System.Drawing.Size(100, 100);
+            this.picC5.Size = new System.Drawing.Size(132, 122);
             this.picC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picC5.TabIndex = 24;
             this.picC5.TabStop = false;
@@ -236,10 +222,10 @@ namespace UserInterface
             // 
             this.picB3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picB3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picB3.Location = new System.Drawing.Point(99, 200);
+            this.picB3.Location = new System.Drawing.Point(132, 246);
             this.picB3.Margin = new System.Windows.Forms.Padding(0);
             this.picB3.Name = "picB3";
-            this.picB3.Size = new System.Drawing.Size(100, 100);
+            this.picB3.Size = new System.Drawing.Size(132, 122);
             this.picB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picB3.TabIndex = 17;
             this.picB3.TabStop = false;
@@ -252,7 +238,7 @@ namespace UserInterface
             this.picA1.Location = new System.Drawing.Point(0, 0);
             this.picA1.Margin = new System.Windows.Forms.Padding(0);
             this.picA1.Name = "picA1";
-            this.picA1.Size = new System.Drawing.Size(100, 100);
+            this.picA1.Size = new System.Drawing.Size(132, 122);
             this.picA1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picA1.TabIndex = 14;
             this.picA1.TabStop = false;
@@ -262,10 +248,10 @@ namespace UserInterface
             // 
             this.picA5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picA5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picA5.Location = new System.Drawing.Point(0, 400);
+            this.picA5.Location = new System.Drawing.Point(0, 492);
             this.picA5.Margin = new System.Windows.Forms.Padding(0);
             this.picA5.Name = "picA5";
-            this.picA5.Size = new System.Drawing.Size(100, 100);
+            this.picA5.Size = new System.Drawing.Size(132, 122);
             this.picA5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picA5.TabIndex = 22;
             this.picA5.TabStop = false;
@@ -275,10 +261,10 @@ namespace UserInterface
             // 
             this.picB1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picB1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picB1.Location = new System.Drawing.Point(100, 0);
+            this.picB1.Location = new System.Drawing.Point(133, 0);
             this.picB1.Margin = new System.Windows.Forms.Padding(0);
             this.picB1.Name = "picB1";
-            this.picB1.Size = new System.Drawing.Size(100, 100);
+            this.picB1.Size = new System.Drawing.Size(132, 122);
             this.picB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picB1.TabIndex = 13;
             this.picB1.TabStop = false;
@@ -288,10 +274,10 @@ namespace UserInterface
             // 
             this.picB5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picB5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picB5.Location = new System.Drawing.Point(99, 400);
+            this.picB5.Location = new System.Drawing.Point(132, 492);
             this.picB5.Margin = new System.Windows.Forms.Padding(0);
             this.picB5.Name = "picB5";
-            this.picB5.Size = new System.Drawing.Size(100, 100);
+            this.picB5.Size = new System.Drawing.Size(132, 122);
             this.picB5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picB5.TabIndex = 23;
             this.picB5.TabStop = false;
@@ -301,10 +287,10 @@ namespace UserInterface
             // 
             this.picC3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picC3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picC3.Location = new System.Drawing.Point(199, 200);
+            this.picC3.Location = new System.Drawing.Point(265, 246);
             this.picC3.Margin = new System.Windows.Forms.Padding(0);
             this.picC3.Name = "picC3";
-            this.picC3.Size = new System.Drawing.Size(100, 100);
+            this.picC3.Size = new System.Drawing.Size(132, 122);
             this.picC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picC3.TabIndex = 18;
             this.picC3.TabStop = false;
@@ -314,10 +300,10 @@ namespace UserInterface
             // 
             this.picC4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picC4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picC4.Location = new System.Drawing.Point(199, 300);
+            this.picC4.Location = new System.Drawing.Point(265, 369);
             this.picC4.Margin = new System.Windows.Forms.Padding(0);
             this.picC4.Name = "picC4";
-            this.picC4.Size = new System.Drawing.Size(100, 100);
+            this.picC4.Size = new System.Drawing.Size(132, 122);
             this.picC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picC4.TabIndex = 21;
             this.picC4.TabStop = false;
@@ -327,10 +313,10 @@ namespace UserInterface
             // 
             this.picA4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picA4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picA4.Location = new System.Drawing.Point(0, 300);
+            this.picA4.Location = new System.Drawing.Point(0, 369);
             this.picA4.Margin = new System.Windows.Forms.Padding(0);
             this.picA4.Name = "picA4";
-            this.picA4.Size = new System.Drawing.Size(100, 100);
+            this.picA4.Size = new System.Drawing.Size(132, 122);
             this.picA4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picA4.TabIndex = 19;
             this.picA4.TabStop = false;
@@ -340,10 +326,10 @@ namespace UserInterface
             // 
             this.picC2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picC2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picC2.Location = new System.Drawing.Point(199, 100);
+            this.picC2.Location = new System.Drawing.Point(265, 123);
             this.picC2.Margin = new System.Windows.Forms.Padding(0);
             this.picC2.Name = "picC2";
-            this.picC2.Size = new System.Drawing.Size(100, 100);
+            this.picC2.Size = new System.Drawing.Size(132, 122);
             this.picC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picC2.TabIndex = 12;
             this.picC2.TabStop = false;
@@ -353,10 +339,10 @@ namespace UserInterface
             // 
             this.picB4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picB4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picB4.Location = new System.Drawing.Point(99, 300);
+            this.picB4.Location = new System.Drawing.Point(132, 369);
             this.picB4.Margin = new System.Windows.Forms.Padding(0);
             this.picB4.Name = "picB4";
-            this.picB4.Size = new System.Drawing.Size(100, 100);
+            this.picB4.Size = new System.Drawing.Size(132, 122);
             this.picB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picB4.TabIndex = 20;
             this.picB4.TabStop = false;
@@ -366,10 +352,10 @@ namespace UserInterface
             // 
             this.picC1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picC1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picC1.Location = new System.Drawing.Point(200, 0);
+            this.picC1.Location = new System.Drawing.Point(267, 0);
             this.picC1.Margin = new System.Windows.Forms.Padding(0);
             this.picC1.Name = "picC1";
-            this.picC1.Size = new System.Drawing.Size(100, 100);
+            this.picC1.Size = new System.Drawing.Size(132, 122);
             this.picC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picC1.TabIndex = 15;
             this.picC1.TabStop = false;
@@ -379,10 +365,10 @@ namespace UserInterface
             // 
             this.picA2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picA2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picA2.Location = new System.Drawing.Point(0, 100);
+            this.picA2.Location = new System.Drawing.Point(0, 123);
             this.picA2.Margin = new System.Windows.Forms.Padding(0);
             this.picA2.Name = "picA2";
-            this.picA2.Size = new System.Drawing.Size(100, 100);
+            this.picA2.Size = new System.Drawing.Size(132, 122);
             this.picA2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picA2.TabIndex = 10;
             this.picA2.TabStop = false;
@@ -392,10 +378,10 @@ namespace UserInterface
             // 
             this.picB2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picB2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picB2.Location = new System.Drawing.Point(99, 100);
+            this.picB2.Location = new System.Drawing.Point(132, 123);
             this.picB2.Margin = new System.Windows.Forms.Padding(0);
             this.picB2.Name = "picB2";
-            this.picB2.Size = new System.Drawing.Size(100, 100);
+            this.picB2.Size = new System.Drawing.Size(132, 122);
             this.picB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picB2.TabIndex = 11;
             this.picB2.TabStop = false;
@@ -413,20 +399,85 @@ namespace UserInterface
             this.imageList1.Images.SetKeyName(1, "laranja.png");
             this.imageList1.Images.SetKeyName(2, "Seven.png");
             // 
+            // tslUsername
+            // 
+            this.tslUsername.Name = "tslUsername";
+            this.tslUsername.Size = new System.Drawing.Size(129, 20);
+            this.tslUsername.Text = "Usuário: #######";
+            // 
+            // tslCoins
+            // 
+            this.tslCoins.Name = "tslCoins";
+            this.tslCoins.Size = new System.Drawing.Size(88, 20);
+            this.tslCoins.Text = "Coins: ####";
+            // 
+            // tsDetails
+            // 
+            this.tsDetails.BackColor = System.Drawing.Color.LightGray;
+            this.tsDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tsDetails.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.tsDetails.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tslUsername,
+            this.tslCoins});
+            this.tsDetails.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.tsDetails.Location = new System.Drawing.Point(0, 442);
+            this.tsDetails.Name = "tsDetails";
+            this.tsDetails.Size = new System.Drawing.Size(558, 23);
+            this.tsDetails.TabIndex = 0;
+            this.tsDetails.Text = "toolStrip1";
+            // 
+            // picC6
+            // 
+            this.picC6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.picC6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picC6.Location = new System.Drawing.Point(265, 614);
+            this.picC6.Margin = new System.Windows.Forms.Padding(0);
+            this.picC6.Name = "picC6";
+            this.picC6.Size = new System.Drawing.Size(132, 122);
+            this.picC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picC6.TabIndex = 27;
+            this.picC6.TabStop = false;
+            this.picC6.Tag = "C";
+            // 
+            // picA6
+            // 
+            this.picA6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.picA6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picA6.Location = new System.Drawing.Point(0, 614);
+            this.picA6.Margin = new System.Windows.Forms.Padding(0);
+            this.picA6.Name = "picA6";
+            this.picA6.Size = new System.Drawing.Size(132, 122);
+            this.picA6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picA6.TabIndex = 25;
+            this.picA6.TabStop = false;
+            this.picA6.Tag = "A";
+            // 
+            // picB6
+            // 
+            this.picB6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.picB6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picB6.Location = new System.Drawing.Point(132, 614);
+            this.picB6.Margin = new System.Windows.Forms.Padding(0);
+            this.picB6.Name = "picB6";
+            this.picB6.Size = new System.Drawing.Size(132, 122);
+            this.picB6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picB6.TabIndex = 26;
+            this.picB6.TabStop = false;
+            this.picB6.Tag = "B";
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 376);
+            this.ClientSize = new System.Drawing.Size(558, 465);
             this.Controls.Add(this.Roleta);
             this.Controls.Add(this.btnAlavanca);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tsDetails);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.Text = "FinalUser";
             this.Load += new System.EventHandler(this.frmTesteFinalUser_Load);
-            this.tsDetails.ResumeLayout(false);
-            this.tsDetails.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.Roleta.ResumeLayout(false);
@@ -445,16 +496,17 @@ namespace UserInterface
             ((System.ComponentModel.ISupportInitialize)(this.picC1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picA2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picB2)).EndInit();
+            this.tsDetails.ResumeLayout(false);
+            this.tsDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picC6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picA6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picB6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip tsDetails;
-        private System.Windows.Forms.ToolStripLabel tslUsername;
-        private System.Windows.Forms.ToolStripLabel tslCoins;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Button btnAlavanca;
@@ -482,5 +534,11 @@ namespace UserInterface
         private System.Windows.Forms.PictureBox picB2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ToolStripLabel tslUsername;
+        private System.Windows.Forms.ToolStripLabel tslCoins;
+        private System.Windows.Forms.ToolStrip tsDetails;
+        private System.Windows.Forms.PictureBox picC6;
+        private System.Windows.Forms.PictureBox picA6;
+        private System.Windows.Forms.PictureBox picB6;
     }
 }

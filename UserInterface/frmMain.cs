@@ -77,7 +77,7 @@ namespace UserInterface
 
         }
 
-        private void Movimenta(bool ativaMovimento, PictureBox pic1, PictureBox pic2, PictureBox pic3, PictureBox pic4, PictureBox pic5)
+        private void Movimenta(bool ativaMovimento, PictureBox pic1, PictureBox pic2, PictureBox pic3, PictureBox pic4, PictureBox pic5, PictureBox pic6)
         {
             if (ativaMovimento)
             {
@@ -86,32 +86,37 @@ namespace UserInterface
                 pic3.Top -= deslocamento;
                 pic4.Top -= deslocamento;
                 pic5.Top -= deslocamento;
+                pic6.Top -= deslocamento;
             }
         }
 
-        public void VerificaExtremos(bool ativaMovimento, PictureBox pic1, PictureBox pic2, PictureBox pic3, PictureBox pic4, PictureBox pic5)
+        public void VerificaExtremos(bool ativaMovimento, PictureBox pic1, PictureBox pic2, PictureBox pic3, PictureBox pic4, PictureBox pic5, PictureBox pic6)
         {
             if (ativaMovimento)
             {
                 if (pic1.Top <= -200)
                 {
-                    pic1.Top = 300;
+                    pic1.Top = 400;
                 }
                 if (pic2.Top <= -200)
                 {
-                    pic2.Top = 300;
+                    pic2.Top = 400;
                 }
                 if (pic3.Top <= -200)
                 {
-                    pic3.Top = 300;
+                    pic3.Top = 400;
                 }
                 if (pic4.Top <= -200)
                 {
-                    pic4.Top = 300;
+                    pic4.Top = 400;
                 }
                 if (pic5.Top <= -200)
                 {
-                    pic5.Top = 300;
+                    pic5.Top = 400;
+                }
+                if (pic6.Top <= -200)
+                {
+                    pic6.Top = 400;
                 }
             }
         }
@@ -124,18 +129,18 @@ namespace UserInterface
             {
                 if (ativaMovimentoA)
                 {
-                    Movimenta(ativaMovimentoA, picA1, picA2, picA3, picA4, picA5);
-                    VerificaExtremos(ativaMovimentoA, picA1, picA2, picA3, picA4, picA5);
+                    Movimenta(ativaMovimentoA, picA1, picA2, picA3, picA4, picA5, picA6);
+                    VerificaExtremos(ativaMovimentoA, picA1, picA2, picA3, picA4, picA5, picA6);
                 }
                 else if (ativaMovimentoB)
                 {
-                    Movimenta(ativaMovimentoB, picB1, picB2, picB3, picB4, picB5);
-                    VerificaExtremos(ativaMovimentoB, picB1, picB2, picB3, picB4, picB5);
+                    Movimenta(ativaMovimentoB, picB1, picB2, picB3, picB4, picB5, picB6);
+                    VerificaExtremos(ativaMovimentoB, picB1, picB2, picB3, picB4, picB5, picB6);
                 }
                 else if (ativaMovimentoC)
                 {
-                    Movimenta(ativaMovimentoC, picC1, picC2, picC3, picC4, picC5);
-                    VerificaExtremos(ativaMovimentoC, picC1, picC2, picC3, picC4, picC5);
+                    Movimenta(ativaMovimentoC, picC1, picC2, picC3, picC4, picC5, picC6);
+                    VerificaExtremos(ativaMovimentoC, picC1, picC2, picC3, picC4, picC5, picC6);
                 }
 
                 contadorTempo++;
@@ -167,10 +172,10 @@ namespace UserInterface
         #endregion
 
         #region PictureBox Controls
-        private int[] indexImages = { 0, 0, 1, 1, 2}; //Cereja = 0, Laranja = 1, Seven = 2
-        private int[] indexImagesColumnA = new int[5];
-        private int[] indexImagesColumnB = new int[5];
-        private int[] indexImagesColumnC = new int[5];
+        private int[] indexImages = { 0, 0, 0, 1, 1, 2}; //Cereja = 0, Laranja = 1, Seven = 2
+        private int[] indexImagesColumnA = new int[6];
+        private int[] indexImagesColumnB = new int[6];
+        private int[] indexImagesColumnC = new int[6];
 
         private void SetPictureBoxColumns()
         {
@@ -206,7 +211,7 @@ namespace UserInterface
             int[] auxB = VetorSemRepeticao();
             int[] auxC = VetorSemRepeticao();
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 indexImagesColumnA[i] = indexImages[auxA[i]];
                 indexImagesColumnB[i] = indexImages[auxB[i]];
@@ -221,11 +226,11 @@ namespace UserInterface
 
             do
             {
-                if (listaSemRepeticao.Add(random.Next(0, 5)))
+                if (listaSemRepeticao.Add(random.Next(0, 6)))
                 {
                     contador++;
                 }
-            } while (contador < 5);
+            } while (contador < 6);
 
             return listaSemRepeticao.ToArray();
         }
