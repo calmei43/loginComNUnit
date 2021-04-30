@@ -151,5 +151,8 @@
   <ItemGroup>
     <None Include="Resources\Tabela.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diagrama Arvore Correto.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

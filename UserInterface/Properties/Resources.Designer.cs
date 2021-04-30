@@ -73,6 +73,16 @@ namespace UserInterface.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diagrama_Arvore_Correto {
+            get {
+                object obj = ResourceManager.GetObject("Diagrama Arvore Correto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap interruptor_de_alavanca__2_ {
             get {
                 object obj = ResourceManager.GetObject("interruptor-de-alavanca (2)", resourceCulture);

@@ -136,4 +136,21 @@
         TgDQASA1MVpwzwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>O diagrama em árvore serve para mostrar 
+todos os caminhos que a probabildade e
+a matemática podem te levar.
+
+
+Os caminhos que aparecem a mesma fruta 
+três vezes, são os caminhos vencedores. E
+de acordo com a probabilidade de cada um
+acontecer que o prêmio é distribuido. 
+
+
+3 maçãs    ==&gt; R$1,00
+3 bananas ==&gt; R$ 3,00
+3 laranjas  ==&gt; R$ 5,00
+ </value>
+  </data>
 </root>
