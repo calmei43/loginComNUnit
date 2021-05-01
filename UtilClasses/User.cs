@@ -2,12 +2,28 @@
 
 namespace UtilClasses
 {
+    /// <summary>
+    /// Classe referente ao Objeto User
+    /// </summary>
     public class User
     {
         #region "Singleton - Pattern"
 
         private static User _instance;
 
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        public User()
+        {
+            _instance = this;
+        }
+
+        /// <summary>
+        /// Pega a ultima instância do Objeto e se não existir
+        /// nenhuma, retorna uma nova
+        /// </summary>
+        /// <returns>Objeto User</returns>
         public static User GetCurrent()
         {
             if(_instance == null)
@@ -25,6 +41,9 @@ namespace UtilClasses
         private string password;
         private int coins;
 
+        /// <summary>
+        /// Propriedade Username Encapsulada
+        /// </summary>
         public string Username
         {
             get => username;
@@ -37,6 +56,9 @@ namespace UtilClasses
             }
         }
 
+        /// <summary>
+        /// Propriedade Password Encapsulada
+        /// </summary>
         public string Password
         {
             get => password;
@@ -51,6 +73,9 @@ namespace UtilClasses
             }
         }
 
+        /// <summary>
+        /// Propriedade Coins Encapsulada
+        /// </summary>
         public int Coins
         {
             get => coins;
@@ -67,6 +92,9 @@ namespace UtilClasses
             }
         }
 
+        /// <summary>
+        /// Propriedade ID Encapsulada
+        /// </summary>
         public int ID
         {
             get => id;
